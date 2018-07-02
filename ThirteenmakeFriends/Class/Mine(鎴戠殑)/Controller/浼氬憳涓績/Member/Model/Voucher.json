@@ -1,0 +1,25 @@
+{
+    "items": [
+               {
+               "price": 80,
+               "is_use": 1,
+               "voucherType": 1,
+               "overdueTime": 13465781,
+               "des": "入会成为包月会员时使用",
+               },
+               {
+               "price": 40,
+               "is_use": 1,
+               "voucherType": 0,
+               "overdueTime": 13465781,
+               "des": "入会成为至尊会员(半年)时使用",
+               },
+               {
+               "price": 60,
+               "is_use": 0,
+               "voucherType": 1,
+               "overdueTime": 13465781,
+               "des": "入会成为初级会员时使用",
+               }
+              ]
+}

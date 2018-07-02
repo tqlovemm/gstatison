@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="CollectionHistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="299"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="223" placeholderIntrinsicHeight="17" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE2-bT-vDf">
+                        <rect key="frame" x="183" y="15" width="223" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51i-MG-3wQ" customClass="ICEAvatar">
+                        <rect key="frame" x="8" y="15" width="169" height="95"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="169" id="LBD-xu-XN7"/>
+                            <constraint firstAttribute="height" constant="95" id="in1-CQ-m8E"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThirteenSay_time" translatesAutoresizingMaskIntoConstraints="NO" id="abw-Rv-Gja">
+                        <rect key="frame" x="183" y="97" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="6ai-Zo-4Af"/>
+                            <constraint firstAttribute="height" constant="13" id="hO4-AP-ju3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="28.5" placeholderIntrinsicHeight="13.5" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv5-AV-AY7">
+                        <rect key="frame" x="201" y="97.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="praise" translatesAutoresizingMaskIntoConstraints="NO" id="YLN-zw-qZa">
+                        <rect key="frame" x="239.5" y="94.5" width="18" height="18"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="35" placeholderIntrinsicHeight="26" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-4S-vNP">
+                        <rect key="frame" x="260.5" y="90.5" width="35" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didPressedToPraise:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pfX-Tg-ek1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YLN-zw-qZa" firstAttribute="leading" secondItem="Gv5-AV-AY7" secondAttribute="trailing" constant="10" id="4zI-pw-jq5"/>
+                    <constraint firstItem="51i-MG-3wQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="5wc-Ms-NWT"/>
+                    <constraint firstItem="abw-Rv-Gja" firstAttribute="bottom" secondItem="51i-MG-3wQ" secondAttribute="bottom" id="84g-Bd-916"/>
+                    <constraint firstItem="xE2-bT-vDf" firstAttribute="top" secondItem="51i-MG-3wQ" secondAttribute="top" id="BWQ-vb-VLM"/>
+                    <constraint firstItem="Gv5-AV-AY7" firstAttribute="centerY" secondItem="abw-Rv-Gja" secondAttribute="centerY" id="Czb-WZ-Vau"/>
+                    <constraint firstItem="CFG-4S-vNP" firstAttribute="leading" secondItem="YLN-zw-qZa" secondAttribute="trailing" constant="3" id="FGI-5I-ks8"/>
+                    <constraint firstItem="xE2-bT-vDf" firstAttribute="leading" secondItem="51i-MG-3wQ" secondAttribute="trailing" constant="6" id="Txs-7b-NHo"/>
+                    <constraint firstItem="Gv5-AV-AY7" firstAttribute="leading" secondItem="abw-Rv-Gja" secondAttribute="trailing" constant="5" id="gia-rj-Ww8"/>
+                    <constraint firstAttribute="trailing" secondItem="xE2-bT-vDf" secondAttribute="trailing" constant="15" id="sUl-HF-uHS"/>
+                    <constraint firstItem="YLN-zw-qZa" firstAttribute="centerY" secondItem="abw-Rv-Gja" secondAttribute="centerY" id="wfg-8r-Nul"/>
+                    <constraint firstItem="abw-Rv-Gja" firstAttribute="leading" secondItem="51i-MG-3wQ" secondAttribute="trailing" constant="6" id="xDy-X4-Klf"/>
+                    <constraint firstItem="51i-MG-3wQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="zdC-UQ-GDG"/>
+                    <constraint firstItem="CFG-4S-vNP" firstAttribute="centerY" secondItem="YLN-zw-qZa" secondAttribute="centerY" id="zfW-dM-5rA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarView" destination="51i-MG-3wQ" id="2mk-VX-WyQ"/>
+                <outlet property="btnPraise" destination="CFG-4S-vNP" id="bR3-Yc-uHh"/>
+                <outlet property="imgPraise" destination="YLN-zw-qZa" id="hvc-Vd-K4f"/>
+                <outlet property="lblName" destination="xE2-bT-vDf" id="V9o-dY-pai"/>
+                <outlet property="lblTime" destination="Gv5-AV-AY7" id="UEg-gN-BII"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="8"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ThirteenSay_time" width="26" height="26"/>
+        <image name="praise" width="18" height="18"/>
+    </resources>
+</document>

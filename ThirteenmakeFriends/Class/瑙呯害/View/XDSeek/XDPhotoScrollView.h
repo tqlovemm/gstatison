@@ -1,0 +1,15 @@
+//
+//  XDPhotoScrollView.h
+//  ThirteenmakeFriends
+//
+//  Created by Xudongdong on 2017/8/30.
+//  Copyright © 2017年 ThirtyOneDay. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface XDPhotoScrollView : UIView
+
+@property (nonatomic, strong) NSArray *photos;
+
+@end

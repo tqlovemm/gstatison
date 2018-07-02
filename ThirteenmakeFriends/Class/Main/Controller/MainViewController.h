@@ -1,0 +1,38 @@
+/************************************************************
+  *  * EaseMob CONFIDENTIAL 
+  * __________________ 
+  * Copyright (C) 2013-2014 EaseMob Technologies. All rights reserved. 
+  *  
+  * NOTICE: All information contained herein is, and remains 
+  * the property of EaseMob Technologies.
+  * Dissemination of this information or reproduction of this material 
+  * is strictly forbidden unless prior written permission is obtained
+  * from EaseMob Technologies.
+  */
+
+#import <UIKit/UIKit.h>
+
+@interface MainViewController : UITabBarController
+{
+    EMConnectionState _connectionState;
+}
+
+- (void)jumpToChatList;
+
+- (void)setupUnreadMessageCount;
+
+- (void)networkChanged:(EMConnectionState)connectionState;
+
+- (void)didReceiveLocalNotification:(UILocalNotification *)notification;
+
+/**
+ *  播放声音
+ */
+- (void)playSoundAndVibration;
+
+/**
+ *  收到好友请求
+ */
+- (void)didReceiveAddBuddyRequest;
+
+@end

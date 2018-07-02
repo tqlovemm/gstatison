@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XDNRFooterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="106"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="106"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dex-Bk-sLU">
+                        <rect key="frame" x="59" y="21" width="258" height="64"/>
+                        <state key="normal" title="提交" backgroundImage="rectangle7"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dex-Bk-sLU" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="8oa-69-Pci"/>
+                <constraint firstItem="dex-Bk-sLU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="SyM-Xb-m1T"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="376" height="106"/>
+            <connections>
+                <outlet property="surebtn" destination="dex-Bk-sLU" id="Xfh-Hc-rv0"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="96"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rectangle7" width="258" height="64"/>
+    </resources>
+</document>

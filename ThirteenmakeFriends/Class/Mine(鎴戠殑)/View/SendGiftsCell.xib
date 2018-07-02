@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SendGiftsCell">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="141" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tid-4m-6X0">
+                        <rect key="frame" x="35.5" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="bIY-4l-65N"/>
+                            <constraint firstAttribute="width" constant="70" id="jvb-10-Px1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="棒棒糖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgp-bJ-Cxb">
+                        <rect key="frame" x="52" y="95" width="37" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6心动币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S84-AD-sfx">
+                        <rect key="frame" x="52" y="112.5" width="37.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chenggong" translatesAutoresizingMaskIntoConstraints="NO" id="c0i-eC-byA">
+                        <rect key="frame" x="114" y="5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="MQQ-HL-74S"/>
+                            <constraint firstAttribute="width" constant="22" id="iUG-u9-hbg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="S84-AD-sfx" firstAttribute="top" secondItem="mgp-bJ-Cxb" secondAttribute="bottom" constant="3" id="5sf-RS-Ff4"/>
+                <constraint firstItem="tid-4m-6X0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="9yw-bE-cA6"/>
+                <constraint firstItem="mgp-bJ-Cxb" firstAttribute="top" secondItem="tid-4m-6X0" secondAttribute="bottom" constant="10" id="EDu-gl-34p"/>
+                <constraint firstItem="c0i-eC-byA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="GcX-WY-3na"/>
+                <constraint firstItem="S84-AD-sfx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Ld5-Yo-bhB"/>
+                <constraint firstAttribute="trailing" secondItem="c0i-eC-byA" secondAttribute="trailing" constant="5" id="Rzf-aU-DP6"/>
+                <constraint firstItem="tid-4m-6X0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="XeR-Ws-iK2"/>
+                <constraint firstItem="mgp-bJ-Cxb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="mIn-YA-q2m"/>
+            </constraints>
+            <size key="customSize" width="141" height="135"/>
+            <connections>
+                <outlet property="imgView" destination="tid-4m-6X0" id="wZe-IJ-o84"/>
+                <outlet property="nameLabel" destination="mgp-bJ-Cxb" id="UCI-kH-bVr"/>
+                <outlet property="stateImgView" destination="c0i-eC-byA" id="JLp-pK-QC3"/>
+                <outlet property="zuanshiLabel" destination="S84-AD-sfx" id="I20-Ed-tra"/>
+            </connections>
+            <point key="canvasLocation" x="21.5" y="98.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chenggong" width="50" height="50"/>
+    </resources>
+</document>

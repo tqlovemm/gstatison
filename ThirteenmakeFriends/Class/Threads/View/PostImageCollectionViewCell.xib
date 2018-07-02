@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PostImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="432"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="432"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6om-Pe-bcA">
+                        <rect key="frame" x="0.0" y="5" width="362" height="427"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="found_photo_delete" translatesAutoresizingMaskIntoConstraints="NO" id="Gug-CK-pAz">
+                        <rect key="frame" x="347" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Gbq-mj-fid"/>
+                            <constraint firstAttribute="height" constant="20" id="xI3-gz-6zl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uR-hi-VhY">
+                        <rect key="frame" x="332" y="0.0" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="K3S-5e-x07"/>
+                            <constraint firstAttribute="width" constant="35" id="e6N-Fq-A8V"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didPressedToCancle:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Irm-wn-s8Z"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gug-CK-pAz" secondAttribute="trailing" id="3ck-Ut-E8C"/>
+                <constraint firstItem="Gug-CK-pAz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EkL-Pa-HUk"/>
+                <constraint firstItem="6uR-hi-VhY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eGc-oq-IK1"/>
+                <constraint firstItem="6om-Pe-bcA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="hI2-CU-sOJ"/>
+                <constraint firstAttribute="trailing" secondItem="6om-Pe-bcA" secondAttribute="trailing" constant="5" id="kog-Ql-1tt"/>
+                <constraint firstItem="6om-Pe-bcA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pHH-4v-JA1"/>
+                <constraint firstAttribute="bottom" secondItem="6om-Pe-bcA" secondAttribute="bottom" id="u7U-eu-g4q"/>
+                <constraint firstAttribute="trailing" secondItem="6uR-hi-VhY" secondAttribute="trailing" id="uad-uQ-PZU"/>
+            </constraints>
+            <size key="customSize" width="367" height="432"/>
+            <connections>
+                <outlet property="btnCancle" destination="6uR-hi-VhY" id="Eku-q1-hJn"/>
+                <outlet property="imgCancle" destination="Gug-CK-pAz" id="Yk3-8d-WVO"/>
+                <outlet property="imgViewPic" destination="6om-Pe-bcA" id="XA7-fW-bRf"/>
+            </connections>
+            <point key="canvasLocation" x="-338" y="177"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="found_photo_delete" width="26" height="26"/>
+    </resources>
+</document>
